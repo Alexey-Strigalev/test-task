@@ -276,9 +276,15 @@
 .offers__dropdown {
     display: none;
     position: absolute;
-    top: 10px;
+    top: 13px;
     left: 0;
     padding-top: 10px;
+    background-color: #fff;
+    z-index: 5;
+
+    @media (min-width: 1200px) {
+        top: 15px;
+    }
 }
 
 .offers__dropdown--right {

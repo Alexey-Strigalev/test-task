@@ -1,0 +1,55 @@
+.nav__mobile-menu {
+    position: relative;
+
+    padding-top: 22px;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    label {
+        position: relative;
+        display: block;
+        font-size: 13px;
+        cursor: pointer;
+
+        svg {
+            margin-left: 10px;
+        }
+    }
+}
+
+.nav-menu__content {
+    display: none;
+    max-width: 200px;
+    margin: 0 auto;
+    text-align: start;
+    padding-top: 15px;
+
+    li {
+        padding: 7px 15px;
+
+        a {
+            display: block;
+        }
+
+        &:hover {
+            background-color:  rgba(189, 189, 189, 0.35);
+        }
+    }
+}
+
+
+.nav__mobile-menu input:checked ~ .nav-menu__content {
+    display: block;
+}
+
+.nav__mobile-menu input:checked + label svg {
+    transform: rotate(180deg);
+}

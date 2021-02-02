@@ -29,7 +29,31 @@
                             include ../../img/bascet-icon.svg
                             span Корзина пуста
 
-            a(href="#!").nav__mobile-menu Меню
+            .nav__mobile-menu
+                input(type="checkbox" id="nav-menu")
+                label(for="nav-menu") Меню
+                    include ../../img/arrow-bottom.svg
+                
+                ul.nav-menu__content
+                    li
+                        a(href="#!") Акции
+                    li
+                        a(href="#!") О нас
+                    li
+                        a(href="#!") Мероприятия
+                    li
+                        a(href="#!") Оплата и доставка
+                    li
+                        a(href="#!") Что с моим заказом?
+                    li
+                        a(href="#!") Гос. закупки
+                    li
+                        a(href="#!") Блог
+                    li
+                        a(href="#!") Мастер-классы
+                    li
+                        a(href="#!") Контакты
+
 
             ul.header-panel__nav
                 li
@@ -54,7 +78,145 @@
     .header-panel__offers
         .container
             .header-panel__row
-                a(href="#!").offers__mobile-menu Наши предложения
+
+                .offers__mobile-menu
+                    input(type="checkbox" id="offers-menu")
+                    label(for="offers-menu") Наши предложения
+                        include ../../img/arrow-bottom.svg
+                    ul.offers-menu__content
+                        li 
+                            span 3D-принтеры
+                            include ../../img/arrow-bottom-grey.svg
+                            .offers__dropdown
+                                ul.offers__dropdown-list
+                                    li
+                                        a(href="#!") Пункт 1
+                                    li
+                                        a(href="#!") Пункт 2
+                                    li
+                                        a(href="#!") Пункт 3
+                        li 
+                            span 3D-сканеры
+                            include ../../img/arrow-bottom-grey.svg
+                            .offers__dropdown
+                                ul.offers__dropdown-list
+                                    li
+                                        a(href="#!") Пункт 1
+                                    li
+                                        a(href="#!") Пункт 2
+                                    li
+                                        a(href="#!") Пункт 3
+                        li 
+                            span Станки
+                            include ../../img/arrow-bottom-grey.svg
+                            .offers__dropdown
+                                ul.offers__dropdown-list
+                                    li
+                                        a(href="#!") Пункт 1
+                                    li
+                                        a(href="#!") Пункт 2
+                                    li
+                                        a(href="#!") Пункт 3
+                        li 
+                            span Роботы
+                            include ../../img/arrow-bottom-grey.svg
+                            .offers__dropdown.offers__dropdown--right
+                                ul.offers__dropdown-list
+                                    li
+                                        a(href="#!") Пункт 1
+                                    li
+                                        a(href="#!") Пункт 2
+                                    li
+                                        a(href="#!") Пункт 3
+                        li 
+                            span Образование
+                            include ../../img/arrow-bottom-grey.svg
+                            .offers__dropdown
+                                ul.offers__dropdown-list
+                                    li
+                                        a(href="#!") Пункт 1
+                                    li
+                                        a(href="#!") Пункт 2
+                                    li
+                                        a(href="#!") Пункт 3
+                        li 
+                            span Стоматологам
+                            include ../../img/arrow-bottom-grey.svg
+                            .offers__dropdown
+                                ul.offers__dropdown-list
+                                    li
+                                        a(href="#!") Пункт 1
+                                    li
+                                        a(href="#!") Пункт 2
+                                    li
+                                        a(href="#!") Пункт 3
+                        li 
+                            span Гаджеты
+                            include ../../img/arrow-bottom-grey.svg
+                            .offers__dropdown
+                                ul.offers__dropdown-list
+                                    li
+                                        a(href="#!") Пункт 1
+                                    li
+                                        a(href="#!") Пункт 2
+                                    li
+                                        a(href="#!") Пункт 3
+                        li 
+                            span Материалы
+                            include ../../img/arrow-bottom-grey.svg
+                            .offers__dropdown
+                                ul.offers__dropdown-list
+                                    li
+                                        a(href="#!") Пункт 1
+                                    li
+                                        a(href="#!") Пункт 2
+                                    li
+                                        a(href="#!") Пункт 3
+                        li 
+                            span ПО
+                            include ../../img/arrow-bottom-grey.svg
+                            .offers__dropdown
+                                ul.offers__dropdown-list
+                                    li
+                                        a(href="#!") Пункт 1
+                                    li
+                                        a(href="#!") Пункт 2
+                                    li
+                                        a(href="#!") Пункт 3
+                        li 
+                            span Решения
+                            include ../../img/arrow-bottom-grey.svg
+                            .offers__dropdown
+                                ul.offers__dropdown-list
+                                    li
+                                        a(href="#!") Пункт 1
+                                    li
+                                        a(href="#!") Пункт 2
+                                    li
+                                        a(href="#!") Пункт 3
+                        li 
+                            span Учебный центр
+                            include ../../img/arrow-bottom-grey.svg
+                            .offers__dropdown
+                                ul.offers__dropdown-list
+                                    li
+                                        a(href="#!") Пункт 1
+                                    li
+                                        a(href="#!") Пункт 2
+                                    li
+                                        a(href="#!") Пункт 3
+                        li 
+                            span Услуги
+                            include ../../img/arrow-bottom-grey.svg
+                            .offers__dropdown
+                                ul.offers__dropdown-list
+                                    li
+                                        a(href="#!") Пункт 1
+                                    li
+                                        a(href="#!") Пункт 2
+                                    li
+                                        a(href="#!") Пункт 3
+
                 ul.header-panel__offers-list
                     li 
                         span 3D-принтеры
