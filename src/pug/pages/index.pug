@@ -1,0 +1,27 @@
+extends ./../layouts/main.pug
+
+block variables
+    - const title = "Тест";
+
+block header
+    //- Header
+    include ./../sections/header.pug
+    //- // Header
+
+block main
+    //- Главный баннер
+    include ./../sections/main-banner.pug
+    //- // Главный баннер
+
+    //- Основаня информация
+    include ./../sections/main-info.pug
+    //- // Основаня информация
+
+    //- О компании
+    include ./../sections/section-about-company.pug
+    //- // О компании
+
+    //- Видео о компании
+    include ./../sections/section-video.pug
+    //- // Видео о компании
+    

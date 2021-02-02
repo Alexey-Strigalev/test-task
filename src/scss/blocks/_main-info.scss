@@ -1,0 +1,117 @@
+.main {
+    font-family: 'sf_pro_text', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.18;
+
+    @media (min-width: 992px) {
+        font-size: 16px;
+    }
+}
+
+.main-info {
+    margin-bottom: 70px;
+}
+
+.main-info__row {
+    display: flex;
+    flex-direction: column;
+
+
+    @media (min-width: 576px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.main-info__vacancy-block {
+    max-width: 335px;
+    margin-right: 30px;
+}
+
+.vacancy-block__title {
+    margin-bottom: 25px;
+    font-family: 'sf_pro_display', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+
+    @media (min-width: 576px) {
+        margin-bottom: 40px;
+        text-align: start;
+        font-size: 24px;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 27px;
+    }
+}
+
+.vacancy-block__summary {
+    margin-bottom: 20px;
+
+    background-color: #D2001C;
+    border-radius: 4px;
+    padding: 12px 75px;
+
+    font-family: 'sf_pro_text', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.7px;
+    color: #fff;
+    transition: 0.2s ease-in;
+
+    @media (min-width: 576px) {
+        width: 215px;
+        padding: 12px 0;
+    }
+
+    @media (min-width: 768px) {
+        width: unset;
+        padding: 12px 75px;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 16px;
+    }
+
+    &:hover, &:active, &:focus {
+        background-color: lighten($color:#D2001C, $amount: 20);
+    }
+}
+
+.vacancy-block__warning {
+    margin-bottom: 25px;
+    max-width: 220px;
+    font-size: 12px;
+    letter-spacing: -0.7px;
+    color: #C4C4C4;
+
+    @media (min-width: 576px) {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+}
+
+.main-info__text {
+    color: #4D4D4D;
+    max-width: 450px;
+
+    @media (min-width: 992px) {
+        max-width: 580px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 710px;
+    }
+
+    a {
+        text-decoration: underline;
+        color: #D2001C;
+    }
+
+    P + P {
+        margin-top: 15px;
+    }
+}

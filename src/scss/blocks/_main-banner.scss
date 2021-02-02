@@ -1,0 +1,11 @@
+.main-banner__row {
+    display: none;
+
+    @media (min-width: 576px) {
+        display: block;
+        margin-bottom: 50px;
+        overflow: hidden;
+        object-position: center;
+        object-fit: cover;
+    }
+}
